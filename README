@@ -1,0 +1,19 @@
+This project presents a GPU-based tau-leaping version of the Gillespie algorithm. 
+Only NVIDIA(tm) video cards are supported now.
+
+How to create a local copy of the repository?
+=============================================
+git clone git://github.com/CSSL-UWM/tau_leaping.git
+
+You can build the project with the CMake tool:
+cd tau_leaping
+mkdir build
+cd build
+cmake ..
+make
+
+The CUDA driver and CUDA Toolkit must be installed in the system. The latest version is available at:
+http://developer.nvidia.com/cuda-toolkit
+
+to run the simulation, use the following syntax:
+tau_leaping -f <model_name> -t <finish_time> -n <number of realizations> -r <list_of_Species_to_track_space_separated> 

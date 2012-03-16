@@ -1,0 +1,2731 @@
+<!-- Stochkit 2.0 text input format
+
+reference:
+M. Rathinam, L.R. Petzold, Y. Cao, and D.T. Gillespie. J Chem Phys 119, 12784 (2003).
+-->
+
+<!-- Input data for testing StochKit vs. GPU implementation. Ivan Komarov 2011-->
+
+<Model>
+	<Description>Test input data</Description>
+	<NumberOfReactions>128</NumberOfReactions>
+	<NumberOfSpecies>128</NumberOfSpecies>
+	<ParametersList>
+		<Parameter>
+			<Id>c1</Id>
+			<Expression>0.650939</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c2</Id>
+			<Expression>0.641798</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c3</Id>
+			<Expression>0.000345</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c4</Id>
+			<Expression>0.396927</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c5</Id>
+			<Expression>0.721940</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c6</Id>
+			<Expression>0.831958</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c7</Id>
+			<Expression>0.153597</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c8</Id>
+			<Expression>0.393783</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c9</Id>
+			<Expression>0.214960</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c10</Id>
+			<Expression>0.189216</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c11</Id>
+			<Expression>0.475984</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c12</Id>
+			<Expression>0.576445</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c13</Id>
+			<Expression>0.148117</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c14</Id>
+			<Expression>0.806774</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c15</Id>
+			<Expression>0.538927</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c16</Id>
+			<Expression>0.335085</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c17</Id>
+			<Expression>0.988829</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c18</Id>
+			<Expression>0.796862</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c19</Id>
+			<Expression>0.029338</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c20</Id>
+			<Expression>0.640383</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c21</Id>
+			<Expression>0.499591</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c22</Id>
+			<Expression>0.845816</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c23</Id>
+			<Expression>0.774961</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c24</Id>
+			<Expression>0.091027</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c25</Id>
+			<Expression>0.895994</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c26</Id>
+			<Expression>0.788488</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c27</Id>
+			<Expression>0.154061</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c28</Id>
+			<Expression>0.281411</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c29</Id>
+			<Expression>0.112312</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c30</Id>
+			<Expression>0.640697</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c31</Id>
+			<Expression>0.328346</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c32</Id>
+			<Expression>0.690810</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c33</Id>
+			<Expression>0.652672</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c34</Id>
+			<Expression>0.901133</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c35</Id>
+			<Expression>0.503339</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c36</Id>
+			<Expression>0.038403</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c37</Id>
+			<Expression>0.615153</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c38</Id>
+			<Expression>0.389203</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c39</Id>
+			<Expression>0.494406</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c40</Id>
+			<Expression>0.199052</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c41</Id>
+			<Expression>0.901431</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c42</Id>
+			<Expression>0.183649</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c43</Id>
+			<Expression>0.424459</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c44</Id>
+			<Expression>0.678053</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c45</Id>
+			<Expression>0.563922</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c46</Id>
+			<Expression>0.087564</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c47</Id>
+			<Expression>0.413255</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c48</Id>
+			<Expression>0.846298</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c49</Id>
+			<Expression>0.056139</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c50</Id>
+			<Expression>0.517046</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c51</Id>
+			<Expression>0.847365</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c52</Id>
+			<Expression>0.228099</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c53</Id>
+			<Expression>0.597687</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c54</Id>
+			<Expression>0.695548</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c55</Id>
+			<Expression>0.262739</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c56</Id>
+			<Expression>0.267370</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c57</Id>
+			<Expression>0.737932</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c58</Id>
+			<Expression>0.495266</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c59</Id>
+			<Expression>0.767193</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c60</Id>
+			<Expression>0.980343</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c61</Id>
+			<Expression>0.124250</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c62</Id>
+			<Expression>0.829900</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c63</Id>
+			<Expression>0.098411</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c64</Id>
+			<Expression>0.788983</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c65</Id>
+			<Expression>0.655590</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c66</Id>
+			<Expression>0.321640</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c67</Id>
+			<Expression>0.246039</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c68</Id>
+			<Expression>0.893294</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c69</Id>
+			<Expression>0.881388</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c70</Id>
+			<Expression>0.039307</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c71</Id>
+			<Expression>0.912697</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c72</Id>
+			<Expression>0.722223</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c73</Id>
+			<Expression>0.821722</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c74</Id>
+			<Expression>0.608835</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c75</Id>
+			<Expression>0.141477</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c76</Id>
+			<Expression>0.820937</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c77</Id>
+			<Expression>0.993050</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c78</Id>
+			<Expression>0.605708</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c79</Id>
+			<Expression>0.517697</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c80</Id>
+			<Expression>0.389510</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c81</Id>
+			<Expression>0.311994</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c82</Id>
+			<Expression>0.591283</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c83</Id>
+			<Expression>0.159701</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c84</Id>
+			<Expression>0.052226</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c85</Id>
+			<Expression>0.468318</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c86</Id>
+			<Expression>0.858910</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c87</Id>
+			<Expression>0.508436</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c88</Id>
+			<Expression>0.320321</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c89</Id>
+			<Expression>0.964215</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c90</Id>
+			<Expression>0.631841</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c91</Id>
+			<Expression>0.631127</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c92</Id>
+			<Expression>0.121848</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c93</Id>
+			<Expression>0.053152</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c94</Id>
+			<Expression>0.390218</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c95</Id>
+			<Expression>0.137761</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c96</Id>
+			<Expression>0.400857</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c97</Id>
+			<Expression>0.750655</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c98</Id>
+			<Expression>0.277705</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c99</Id>
+			<Expression>0.583126</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c100</Id>
+			<Expression>0.478037</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c101</Id>
+			<Expression>0.520350</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c102</Id>
+			<Expression>0.828933</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c103</Id>
+			<Expression>0.103040</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c104</Id>
+			<Expression>0.478762</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c105</Id>
+			<Expression>0.490668</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c106</Id>
+			<Expression>0.720028</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c107</Id>
+			<Expression>0.589689</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c108</Id>
+			<Expression>0.222772</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c109</Id>
+			<Expression>0.694369</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c110</Id>
+			<Expression>0.373020</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c111</Id>
+			<Expression>0.444662</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c112</Id>
+			<Expression>0.507377</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c113</Id>
+			<Expression>0.040049</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c114</Id>
+			<Expression>0.106290</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c115</Id>
+			<Expression>0.116986</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c116</Id>
+			<Expression>0.784819</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c117</Id>
+			<Expression>0.978441</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c118</Id>
+			<Expression>0.003029</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c119</Id>
+			<Expression>0.207411</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c120</Id>
+			<Expression>0.538028</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c121</Id>
+			<Expression>0.654648</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c122</Id>
+			<Expression>0.875674</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c123</Id>
+			<Expression>0.383302</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c124</Id>
+			<Expression>0.037951</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c125</Id>
+			<Expression>0.988277</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c126</Id>
+			<Expression>0.050059</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c127</Id>
+			<Expression>0.142629</Expression>
+		</Parameter>
+		<Parameter>
+			<Id>c128</Id>
+			<Expression>0.239278</Expression>
+		</Parameter>
+	</ParametersList>
+	<ReactionsList>
+		<Reaction>
+			<Id>R107</Id>
+			<Description>2 * S42 to S36</Description>
+			<Type>mass-action</Type>
+			<Rate>c107</Rate>
+			<Reactants>
+				<SpeciesReference id="S42" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S36" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R3</Id>
+			<Description>S42 to 2 * S98</Description>
+			<Type>mass-action</Type>
+			<Rate>c3</Rate>
+			<Reactants>
+				<SpeciesReference id="S42" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S98" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R1</Id>
+			<Description>S90 to S14</Description>
+			<Type>mass-action</Type>
+			<Rate>c1</Rate>
+			<Reactants>
+				<SpeciesReference id="S90" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S14" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R122</Id>
+			<Description>2 * S102 to S22</Description>
+			<Type>mass-action</Type>
+			<Rate>c122</Rate>
+			<Reactants>
+				<SpeciesReference id="S102" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S22" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R2</Id>
+			<Description>S102 to S119</Description>
+			<Type>mass-action</Type>
+			<Rate>c2</Rate>
+			<Reactants>
+				<SpeciesReference id="S102" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S119" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R17</Id>
+			<Description>S37 to 2 * S25</Description>
+			<Type>mass-action</Type>
+			<Rate>c17</Rate>
+			<Reactants>
+				<SpeciesReference id="S37" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S25" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R4</Id>
+			<Description>S27 to S54 + S71</Description>
+			<Type>mass-action</Type>
+			<Rate>c4</Rate>
+			<Reactants>
+				<SpeciesReference id="S27" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S54" stoichiometry="1"/>
+				<SpeciesReference id="S71" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R8</Id>
+			<Description>S24 to 2 * S93</Description>
+			<Type>mass-action</Type>
+			<Rate>c8</Rate>
+			<Reactants>
+				<SpeciesReference id="S24" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S93" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R111</Id>
+			<Description>2 * S45 to S73</Description>
+			<Type>mass-action</Type>
+			<Rate>c111</Rate>
+			<Reactants>
+				<SpeciesReference id="S45" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S73" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R60</Id>
+			<Description>S45 to S86</Description>
+			<Type>mass-action</Type>
+			<Rate>c60</Rate>
+			<Reactants>
+				<SpeciesReference id="S45" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S86" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R110</Id>
+			<Description>2 * S109 to S66</Description>
+			<Type>mass-action</Type>
+			<Rate>c110</Rate>
+			<Reactants>
+				<SpeciesReference id="S109" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S66" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R14</Id>
+			<Description>S109 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c14</Rate>
+			<Reactants>
+				<SpeciesReference id="S109" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R36</Id>
+			<Description>S40 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c36</Rate>
+			<Reactants>
+				<SpeciesReference id="S40" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R6</Id>
+			<Description>S83 to S19</Description>
+			<Type>mass-action</Type>
+			<Rate>c6</Rate>
+			<Reactants>
+				<SpeciesReference id="S83" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S19" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R89</Id>
+			<Description>S71 +  S100 to S103 + S121</Description>
+			<Type>mass-action</Type>
+			<Rate>c89</Rate>
+			<Reactants>
+				<SpeciesReference id="S71" stoichiometry="1"/>
+				<SpeciesReference id="S100" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S103" stoichiometry="1"/>
+				<SpeciesReference id="S121" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R42</Id>
+			<Description>S127 to 2 * S31</Description>
+			<Type>mass-action</Type>
+			<Rate>c42</Rate>
+			<Reactants>
+				<SpeciesReference id="S127" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S31" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R29</Id>
+			<Description>S1 to S91 + S9</Description>
+			<Type>mass-action</Type>
+			<Rate>c29</Rate>
+			<Reactants>
+				<SpeciesReference id="S1" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S91" stoichiometry="1"/>
+				<SpeciesReference id="S9" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R124</Id>
+			<Description>2 * S128 to S7</Description>
+			<Type>mass-action</Type>
+			<Rate>c124</Rate>
+			<Reactants>
+				<SpeciesReference id="S128" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S7" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R104</Id>
+			<Description>2 * S65 to S86</Description>
+			<Type>mass-action</Type>
+			<Rate>c104</Rate>
+			<Reactants>
+				<SpeciesReference id="S65" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S86" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R12</Id>
+			<Description>S65 to S66 + S103</Description>
+			<Type>mass-action</Type>
+			<Rate>c12</Rate>
+			<Reactants>
+				<SpeciesReference id="S65" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S66" stoichiometry="1"/>
+				<SpeciesReference id="S103" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R5</Id>
+			<Description>S63 to 2 * S111</Description>
+			<Type>mass-action</Type>
+			<Rate>c5</Rate>
+			<Reactants>
+				<SpeciesReference id="S63" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S111" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R7</Id>
+			<Description>S36 to S21</Description>
+			<Type>mass-action</Type>
+			<Rate>c7</Rate>
+			<Reactants>
+				<SpeciesReference id="S36" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S21" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R9</Id>
+			<Description>S46 to 2 * S81</Description>
+			<Type>mass-action</Type>
+			<Rate>c9</Rate>
+			<Reactants>
+				<SpeciesReference id="S46" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S81" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R40</Id>
+			<Description>S17 to S50</Description>
+			<Type>mass-action</Type>
+			<Rate>c40</Rate>
+			<Reactants>
+				<SpeciesReference id="S17" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S50" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R10</Id>
+			<Description>S47 to S100</Description>
+			<Type>mass-action</Type>
+			<Rate>c10</Rate>
+			<Reactants>
+				<SpeciesReference id="S47" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S100" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R55</Id>
+			<Description>S59 to 2 * S106</Description>
+			<Type>mass-action</Type>
+			<Rate>c55</Rate>
+			<Reactants>
+				<SpeciesReference id="S59" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S106" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R118</Id>
+			<Description>2 * S88 to S52</Description>
+			<Type>mass-action</Type>
+			<Rate>c118</Rate>
+			<Reactants>
+				<SpeciesReference id="S88" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S52" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R11</Id>
+			<Description>S69 to 2 * S15</Description>
+			<Type>mass-action</Type>
+			<Rate>c11</Rate>
+			<Reactants>
+				<SpeciesReference id="S69" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S15" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R50</Id>
+			<Description>S88 to S104 + S89</Description>
+			<Type>mass-action</Type>
+			<Rate>c50</Rate>
+			<Reactants>
+				<SpeciesReference id="S88" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S104" stoichiometry="1"/>
+				<SpeciesReference id="S89" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R94</Id>
+			<Description>S88 +  S128 to S45</Description>
+			<Type>mass-action</Type>
+			<Rate>c94</Rate>
+			<Reactants>
+				<SpeciesReference id="S88" stoichiometry="1"/>
+				<SpeciesReference id="S128" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S45" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R25</Id>
+			<Description>S5 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c25</Rate>
+			<Reactants>
+				<SpeciesReference id="S5" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R54</Id>
+			<Description>S61 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c54</Rate>
+			<Reactants>
+				<SpeciesReference id="S61" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R18</Id>
+			<Description>S3 to S29</Description>
+			<Type>mass-action</Type>
+			<Rate>c18</Rate>
+			<Reactants>
+				<SpeciesReference id="S3" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S29" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R128</Id>
+			<Description>2 * S72 to S6</Description>
+			<Type>mass-action</Type>
+			<Rate>c128</Rate>
+			<Reactants>
+				<SpeciesReference id="S72" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S6" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R13</Id>
+			<Description>S72 to S35 + S68</Description>
+			<Type>mass-action</Type>
+			<Rate>c13</Rate>
+			<Reactants>
+				<SpeciesReference id="S72" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S35" stoichiometry="1"/>
+				<SpeciesReference id="S68" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R57</Id>
+			<Description>S23 to 2 * S41</Description>
+			<Type>mass-action</Type>
+			<Rate>c57</Rate>
+			<Reactants>
+				<SpeciesReference id="S23" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S41" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R24</Id>
+			<Description>S87 to S123 + S126</Description>
+			<Type>mass-action</Type>
+			<Rate>c24</Rate>
+			<Reactants>
+				<SpeciesReference id="S87" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S123" stoichiometry="1"/>
+				<SpeciesReference id="S126" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R77</Id>
+			<Description>S127 +  S4 to S11</Description>
+			<Type>mass-action</Type>
+			<Rate>c77</Rate>
+			<Reactants>
+				<SpeciesReference id="S127" stoichiometry="1"/>
+				<SpeciesReference id="S4" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S11" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R15</Id>
+			<Description>S105 to 2 * S26</Description>
+			<Type>mass-action</Type>
+			<Rate>c15</Rate>
+			<Reactants>
+				<SpeciesReference id="S105" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S26" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R16</Id>
+			<Description>S122 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c16</Rate>
+			<Reactants>
+				<SpeciesReference id="S122" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R19</Id>
+			<Description>S12 to S11</Description>
+			<Type>mass-action</Type>
+			<Rate>c19</Rate>
+			<Reactants>
+				<SpeciesReference id="S12" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S11" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R62</Id>
+			<Description>S113 to 2 * S64</Description>
+			<Type>mass-action</Type>
+			<Rate>c62</Rate>
+			<Reactants>
+				<SpeciesReference id="S113" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S64" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R31</Id>
+			<Description>S49 to S85 + S38</Description>
+			<Type>mass-action</Type>
+			<Rate>c31</Rate>
+			<Reactants>
+				<SpeciesReference id="S49" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S85" stoichiometry="1"/>
+				<SpeciesReference id="S38" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R115</Id>
+			<Description>2 * S79 to S82</Description>
+			<Type>mass-action</Type>
+			<Rate>c115</Rate>
+			<Reactants>
+				<SpeciesReference id="S79" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S82" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R20</Id>
+			<Description>S79 to 2 * S8</Description>
+			<Type>mass-action</Type>
+			<Rate>c20</Rate>
+			<Reactants>
+				<SpeciesReference id="S79" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S8" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R44</Id>
+			<Description>S7 to S99 + S55</Description>
+			<Type>mass-action</Type>
+			<Rate>c44</Rate>
+			<Reactants>
+				<SpeciesReference id="S7" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S99" stoichiometry="1"/>
+				<SpeciesReference id="S55" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R22</Id>
+			<Description>S48 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c22</Rate>
+			<Reactants>
+				<SpeciesReference id="S48" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R21</Id>
+			<Description>S57 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c21</Rate>
+			<Reactants>
+				<SpeciesReference id="S57" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R59</Id>
+			<Description>S77 to 2 * S30</Description>
+			<Type>mass-action</Type>
+			<Rate>c59</Rate>
+			<Reactants>
+				<SpeciesReference id="S77" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S30" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R37</Id>
+			<Description>S51 to 2 * S97</Description>
+			<Type>mass-action</Type>
+			<Rate>c37</Rate>
+			<Reactants>
+				<SpeciesReference id="S51" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S97" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R23</Id>
+			<Description>S13 to S10</Description>
+			<Type>mass-action</Type>
+			<Rate>c23</Rate>
+			<Reactants>
+				<SpeciesReference id="S13" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S10" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R26</Id>
+			<Description>S84 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c26</Rate>
+			<Reactants>
+				<SpeciesReference id="S84" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R27</Id>
+			<Description>S4 to 2 * S124</Description>
+			<Type>mass-action</Type>
+			<Rate>c27</Rate>
+			<Reactants>
+				<SpeciesReference id="S4" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S124" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R28</Id>
+			<Description>S114 to S22</Description>
+			<Type>mass-action</Type>
+			<Rate>c28</Rate>
+			<Reactants>
+				<SpeciesReference id="S114" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S22" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R30</Id>
+			<Description>S52 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c30</Rate>
+			<Reactants>
+				<SpeciesReference id="S52" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R32</Id>
+			<Description>S60 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c32</Rate>
+			<Reactants>
+				<SpeciesReference id="S60" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R33</Id>
+			<Description>S110 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c33</Rate>
+			<Reactants>
+				<SpeciesReference id="S110" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R121</Id>
+			<Description>2 * S82 to S98</Description>
+			<Type>mass-action</Type>
+			<Rate>c121</Rate>
+			<Reactants>
+				<SpeciesReference id="S82" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S98" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R34</Id>
+			<Description>S82 to 2 * S125</Description>
+			<Type>mass-action</Type>
+			<Rate>c34</Rate>
+			<Reactants>
+				<SpeciesReference id="S82" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S125" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R35</Id>
+			<Description>S78 to 2 * S58</Description>
+			<Type>mass-action</Type>
+			<Rate>c35</Rate>
+			<Reactants>
+				<SpeciesReference id="S78" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S58" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R38</Id>
+			<Description>S94 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c38</Rate>
+			<Reactants>
+				<SpeciesReference id="S94" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R39</Id>
+			<Description>S20 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c39</Rate>
+			<Reactants>
+				<SpeciesReference id="S20" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R114</Id>
+			<Description>2 * S64 to S33</Description>
+			<Type>mass-action</Type>
+			<Rate>c114</Rate>
+			<Reactants>
+				<SpeciesReference id="S64" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S33" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R53</Id>
+			<Description>S33 to 2 * S44</Description>
+			<Type>mass-action</Type>
+			<Rate>c53</Rate>
+			<Reactants>
+				<SpeciesReference id="S33" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S44" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R41</Id>
+			<Description>S95 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c41</Rate>
+			<Reactants>
+				<SpeciesReference id="S95" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R123</Id>
+			<Description>2 * S56 to S89</Description>
+			<Type>mass-action</Type>
+			<Rate>c123</Rate>
+			<Reactants>
+				<SpeciesReference id="S56" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S89" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R45</Id>
+			<Description>S56 to S34 + S115</Description>
+			<Type>mass-action</Type>
+			<Rate>c45</Rate>
+			<Reactants>
+				<SpeciesReference id="S56" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S34" stoichiometry="1"/>
+				<SpeciesReference id="S115" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R43</Id>
+			<Description>S53 to S128</Description>
+			<Type>mass-action</Type>
+			<Rate>c43</Rate>
+			<Reactants>
+				<SpeciesReference id="S53" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S128" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R46</Id>
+			<Description>S107 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c46</Rate>
+			<Reactants>
+				<SpeciesReference id="S107" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R61</Id>
+			<Description>S120 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c61</Rate>
+			<Reactants>
+				<SpeciesReference id="S120" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R47</Id>
+			<Description>S70 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c47</Rate>
+			<Reactants>
+				<SpeciesReference id="S70" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R48</Id>
+			<Description>S92 to 2 * S75</Description>
+			<Type>mass-action</Type>
+			<Rate>c48</Rate>
+			<Reactants>
+				<SpeciesReference id="S92" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S75" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R56</Id>
+			<Description>S80 to 2 * S108</Description>
+			<Type>mass-action</Type>
+			<Rate>c56</Rate>
+			<Reactants>
+				<SpeciesReference id="S80" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S108" stoichiometry="2"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R49</Id>
+			<Description>S73 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c49</Rate>
+			<Reactants>
+				<SpeciesReference id="S73" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R51</Id>
+			<Description>S18 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c51</Rate>
+			<Reactants>
+				<SpeciesReference id="S18" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R109</Id>
+			<Description>2 * S116 to S111</Description>
+			<Type>mass-action</Type>
+			<Rate>c109</Rate>
+			<Reactants>
+				<SpeciesReference id="S116" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S111" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R52</Id>
+			<Description>S116 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c52</Rate>
+			<Reactants>
+				<SpeciesReference id="S116" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R58</Id>
+			<Description>S118 to S74 + S76</Description>
+			<Type>mass-action</Type>
+			<Rate>c58</Rate>
+			<Reactants>
+				<SpeciesReference id="S118" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S74" stoichiometry="1"/>
+				<SpeciesReference id="S76" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R126</Id>
+			<Description>2 * S28 to S100</Description>
+			<Type>mass-action</Type>
+			<Rate>c126</Rate>
+			<Reactants>
+				<SpeciesReference id="S28" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S100" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R63</Id>
+			<Description>S28 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c63</Rate>
+			<Reactants>
+				<SpeciesReference id="S28" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R127</Id>
+			<Description>2 * S6 to S18</Description>
+			<Type>mass-action</Type>
+			<Rate>c127</Rate>
+			<Reactants>
+				<SpeciesReference id="S6" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S18" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R64</Id>
+			<Description>S6 to null</Description>
+			<Type>mass-action</Type>
+			<Rate>c64</Rate>
+			<Reactants>
+				<SpeciesReference id="S6" stoichiometry="1"/>
+			</Reactants>
+			<Products/>
+		</Reaction>
+		<Reaction>
+			<Id>R65</Id>
+			<Description>S2 +  S16 to S62 + S121</Description>
+			<Type>mass-action</Type>
+			<Rate>c65</Rate>
+			<Reactants>
+				<SpeciesReference id="S2" stoichiometry="1"/>
+				<SpeciesReference id="S16" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S62" stoichiometry="1"/>
+				<SpeciesReference id="S121" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R66</Id>
+			<Description>S101 +  S43 to S96</Description>
+			<Type>mass-action</Type>
+			<Rate>c66</Rate>
+			<Reactants>
+				<SpeciesReference id="S101" stoichiometry="1"/>
+				<SpeciesReference id="S43" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S96" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R96</Id>
+			<Description>S85 +  S52 to S105</Description>
+			<Type>mass-action</Type>
+			<Rate>c96</Rate>
+			<Reactants>
+				<SpeciesReference id="S85" stoichiometry="1"/>
+				<SpeciesReference id="S52" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S105" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R67</Id>
+			<Description>S117 +  S112 to S32 + S39</Description>
+			<Type>mass-action</Type>
+			<Rate>c67</Rate>
+			<Reactants>
+				<SpeciesReference id="S117" stoichiometry="1"/>
+				<SpeciesReference id="S112" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S32" stoichiometry="1"/>
+				<SpeciesReference id="S39" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R68</Id>
+			<Description>S67 +  S49 to S8 + S82</Description>
+			<Type>mass-action</Type>
+			<Rate>c68</Rate>
+			<Reactants>
+				<SpeciesReference id="S67" stoichiometry="1"/>
+				<SpeciesReference id="S49" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S8" stoichiometry="1"/>
+				<SpeciesReference id="S82" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R69</Id>
+			<Description>S40 +  S9 to S57</Description>
+			<Type>mass-action</Type>
+			<Rate>c69</Rate>
+			<Reactants>
+				<SpeciesReference id="S40" stoichiometry="1"/>
+				<SpeciesReference id="S9" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S57" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R70</Id>
+			<Description>S95 +  S117 to S9</Description>
+			<Type>mass-action</Type>
+			<Rate>c70</Rate>
+			<Reactants>
+				<SpeciesReference id="S95" stoichiometry="1"/>
+				<SpeciesReference id="S117" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S9" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R71</Id>
+			<Description>S112 +  S89 to S27</Description>
+			<Type>mass-action</Type>
+			<Rate>c71</Rate>
+			<Reactants>
+				<SpeciesReference id="S112" stoichiometry="1"/>
+				<SpeciesReference id="S89" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S27" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R72</Id>
+			<Description>S2 +  S40 to S69</Description>
+			<Type>mass-action</Type>
+			<Rate>c72</Rate>
+			<Reactants>
+				<SpeciesReference id="S2" stoichiometry="1"/>
+				<SpeciesReference id="S40" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S69" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R73</Id>
+			<Description>S113 +  S52 to S87</Description>
+			<Type>mass-action</Type>
+			<Rate>c73</Rate>
+			<Reactants>
+				<SpeciesReference id="S113" stoichiometry="1"/>
+				<SpeciesReference id="S52" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S87" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R74</Id>
+			<Description>S99 +  S104 to S68 + S2</Description>
+			<Type>mass-action</Type>
+			<Rate>c74</Rate>
+			<Reactants>
+				<SpeciesReference id="S99" stoichiometry="1"/>
+				<SpeciesReference id="S104" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S68" stoichiometry="1"/>
+				<SpeciesReference id="S2" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R75</Id>
+			<Description>S53 +  S12 to S124</Description>
+			<Type>mass-action</Type>
+			<Rate>c75</Rate>
+			<Reactants>
+				<SpeciesReference id="S53" stoichiometry="1"/>
+				<SpeciesReference id="S12" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S124" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R76</Id>
+			<Description>S86 +  S80 to S124</Description>
+			<Type>mass-action</Type>
+			<Rate>c76</Rate>
+			<Reactants>
+				<SpeciesReference id="S86" stoichiometry="1"/>
+				<SpeciesReference id="S80" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S124" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R78</Id>
+			<Description>S96 +  S87 to S59 + S94</Description>
+			<Type>mass-action</Type>
+			<Rate>c78</Rate>
+			<Reactants>
+				<SpeciesReference id="S96" stoichiometry="1"/>
+				<SpeciesReference id="S87" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S59" stoichiometry="1"/>
+				<SpeciesReference id="S94" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R79</Id>
+			<Description>S117 +  S27 to S91</Description>
+			<Type>mass-action</Type>
+			<Rate>c79</Rate>
+			<Reactants>
+				<SpeciesReference id="S117" stoichiometry="1"/>
+				<SpeciesReference id="S27" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S91" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R80</Id>
+			<Description>S13 +  S104 to S79</Description>
+			<Type>mass-action</Type>
+			<Rate>c80</Rate>
+			<Reactants>
+				<SpeciesReference id="S13" stoichiometry="1"/>
+				<SpeciesReference id="S104" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S79" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R81</Id>
+			<Description>S83 +  S18 to S61 + S1</Description>
+			<Type>mass-action</Type>
+			<Rate>c81</Rate>
+			<Reactants>
+				<SpeciesReference id="S83" stoichiometry="1"/>
+				<SpeciesReference id="S18" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S61" stoichiometry="1"/>
+				<SpeciesReference id="S1" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R120</Id>
+			<Description>2 * S39 to S84</Description>
+			<Type>mass-action</Type>
+			<Rate>c120</Rate>
+			<Reactants>
+				<SpeciesReference id="S39" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S84" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R82</Id>
+			<Description>S25 +  S108 to S77 + S71</Description>
+			<Type>mass-action</Type>
+			<Rate>c82</Rate>
+			<Reactants>
+				<SpeciesReference id="S25" stoichiometry="1"/>
+				<SpeciesReference id="S108" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S77" stoichiometry="1"/>
+				<SpeciesReference id="S71" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R83</Id>
+			<Description>S6 +  S20 to S62</Description>
+			<Type>mass-action</Type>
+			<Rate>c83</Rate>
+			<Reactants>
+				<SpeciesReference id="S6" stoichiometry="1"/>
+				<SpeciesReference id="S20" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S62" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R84</Id>
+			<Description>S9 +  S13 to S18 + S25</Description>
+			<Type>mass-action</Type>
+			<Rate>c84</Rate>
+			<Reactants>
+				<SpeciesReference id="S9" stoichiometry="1"/>
+				<SpeciesReference id="S13" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S18" stoichiometry="1"/>
+				<SpeciesReference id="S25" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R85</Id>
+			<Description>S49 +  S53 to S78</Description>
+			<Type>mass-action</Type>
+			<Rate>c85</Rate>
+			<Reactants>
+				<SpeciesReference id="S49" stoichiometry="1"/>
+				<SpeciesReference id="S53" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S78" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R88</Id>
+			<Description>S21 +  S65 to S90</Description>
+			<Type>mass-action</Type>
+			<Rate>c88</Rate>
+			<Reactants>
+				<SpeciesReference id="S21" stoichiometry="1"/>
+				<SpeciesReference id="S65" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S90" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R86</Id>
+			<Description>S41 +  S26 to S110</Description>
+			<Type>mass-action</Type>
+			<Rate>c86</Rate>
+			<Reactants>
+				<SpeciesReference id="S41" stoichiometry="1"/>
+				<SpeciesReference id="S26" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S110" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R87</Id>
+			<Description>S95 +  S123 to S83 + S71</Description>
+			<Type>mass-action</Type>
+			<Rate>c87</Rate>
+			<Reactants>
+				<SpeciesReference id="S95" stoichiometry="1"/>
+				<SpeciesReference id="S123" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S83" stoichiometry="1"/>
+				<SpeciesReference id="S71" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R90</Id>
+			<Description>S72 +  S111 to S23 + S50</Description>
+			<Type>mass-action</Type>
+			<Rate>c90</Rate>
+			<Reactants>
+				<SpeciesReference id="S72" stoichiometry="1"/>
+				<SpeciesReference id="S111" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S23" stoichiometry="1"/>
+				<SpeciesReference id="S50" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R91</Id>
+			<Description>S111 +  S26 to S42 + S103</Description>
+			<Type>mass-action</Type>
+			<Rate>c91</Rate>
+			<Reactants>
+				<SpeciesReference id="S111" stoichiometry="1"/>
+				<SpeciesReference id="S26" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S42" stoichiometry="1"/>
+				<SpeciesReference id="S103" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R92</Id>
+			<Description>S122 +  S45 to S92</Description>
+			<Type>mass-action</Type>
+			<Rate>c92</Rate>
+			<Reactants>
+				<SpeciesReference id="S122" stoichiometry="1"/>
+				<SpeciesReference id="S45" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S92" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R93</Id>
+			<Description>S77 +  S127 to S61</Description>
+			<Type>mass-action</Type>
+			<Rate>c93</Rate>
+			<Reactants>
+				<SpeciesReference id="S77" stoichiometry="1"/>
+				<SpeciesReference id="S127" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S61" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R95</Id>
+			<Description>S122 +  S21 to S61 + S16</Description>
+			<Type>mass-action</Type>
+			<Rate>c95</Rate>
+			<Reactants>
+				<SpeciesReference id="S122" stoichiometry="1"/>
+				<SpeciesReference id="S21" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S61" stoichiometry="1"/>
+				<SpeciesReference id="S16" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R97</Id>
+			<Description>S64 +  S25 to S46 + S65</Description>
+			<Type>mass-action</Type>
+			<Rate>c97</Rate>
+			<Reactants>
+				<SpeciesReference id="S64" stoichiometry="1"/>
+				<SpeciesReference id="S25" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S46" stoichiometry="1"/>
+				<SpeciesReference id="S65" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R98</Id>
+			<Description>S96 +  S1 to S54 + S86</Description>
+			<Type>mass-action</Type>
+			<Rate>c98</Rate>
+			<Reactants>
+				<SpeciesReference id="S96" stoichiometry="1"/>
+				<SpeciesReference id="S1" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S54" stoichiometry="1"/>
+				<SpeciesReference id="S86" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R99</Id>
+			<Description>S54 +  S17 to S105 + S62</Description>
+			<Type>mass-action</Type>
+			<Rate>c99</Rate>
+			<Reactants>
+				<SpeciesReference id="S54" stoichiometry="1"/>
+				<SpeciesReference id="S17" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S105" stoichiometry="1"/>
+				<SpeciesReference id="S62" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R100</Id>
+			<Description>S32 +  S52 to S38 + S102</Description>
+			<Type>mass-action</Type>
+			<Rate>c100</Rate>
+			<Reactants>
+				<SpeciesReference id="S32" stoichiometry="1"/>
+				<SpeciesReference id="S52" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S38" stoichiometry="1"/>
+				<SpeciesReference id="S102" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R101</Id>
+			<Description>S89 +  S39 to S36</Description>
+			<Type>mass-action</Type>
+			<Rate>c101</Rate>
+			<Reactants>
+				<SpeciesReference id="S89" stoichiometry="1"/>
+				<SpeciesReference id="S39" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S36" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R102</Id>
+			<Description>S47 +  S77 to S18</Description>
+			<Type>mass-action</Type>
+			<Rate>c102</Rate>
+			<Reactants>
+				<SpeciesReference id="S47" stoichiometry="1"/>
+				<SpeciesReference id="S77" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S18" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R103</Id>
+			<Description>S74 +  S116 to S113 + S2</Description>
+			<Type>mass-action</Type>
+			<Rate>c103</Rate>
+			<Reactants>
+				<SpeciesReference id="S74" stoichiometry="1"/>
+				<SpeciesReference id="S116" stoichiometry="1"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S113" stoichiometry="1"/>
+				<SpeciesReference id="S2" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R105</Id>
+			<Description>2 * S115 to S112</Description>
+			<Type>mass-action</Type>
+			<Rate>c105</Rate>
+			<Reactants>
+				<SpeciesReference id="S115" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S112" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R106</Id>
+			<Description>2 * S101 to S84</Description>
+			<Type>mass-action</Type>
+			<Rate>c106</Rate>
+			<Reactants>
+				<SpeciesReference id="S101" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S84" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R108</Id>
+			<Description>2 * S117 to S16</Description>
+			<Type>mass-action</Type>
+			<Rate>c108</Rate>
+			<Reactants>
+				<SpeciesReference id="S117" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S16" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R112</Id>
+			<Description>2 * S43 to S85</Description>
+			<Type>mass-action</Type>
+			<Rate>c112</Rate>
+			<Reactants>
+				<SpeciesReference id="S43" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S85" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R113</Id>
+			<Description>2 * S2 to S62</Description>
+			<Type>mass-action</Type>
+			<Rate>c113</Rate>
+			<Reactants>
+				<SpeciesReference id="S2" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S62" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R116</Id>
+			<Description>2 * S31 to S106</Description>
+			<Type>mass-action</Type>
+			<Rate>c116</Rate>
+			<Reactants>
+				<SpeciesReference id="S31" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S106" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R117</Id>
+			<Description>2 * S44 to S32</Description>
+			<Type>mass-action</Type>
+			<Rate>c117</Rate>
+			<Reactants>
+				<SpeciesReference id="S44" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S32" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R119</Id>
+			<Description>2 * S75 to S48</Description>
+			<Type>mass-action</Type>
+			<Rate>c119</Rate>
+			<Reactants>
+				<SpeciesReference id="S75" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S48" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+		<Reaction>
+			<Id>R125</Id>
+			<Description>2 * S119 to S15</Description>
+			<Type>mass-action</Type>
+			<Rate>c125</Rate>
+			<Reactants>
+				<SpeciesReference id="S119" stoichiometry="2"/>
+			</Reactants>
+			<Products>
+				<SpeciesReference id="S15" stoichiometry="1"/>
+			</Products>
+		</Reaction>
+	</ReactionsList>
+	<SpeciesList>
+		<Species>
+			<Id>S1</Id>
+			<Description>Species #1</Description>
+			<InitialPopulation>51306</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S2</Id>
+			<Description>Species #2</Description>
+			<InitialPopulation>24948</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S3</Id>
+			<Description>Species #3</Description>
+			<InitialPopulation>38665</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S4</Id>
+			<Description>Species #4</Description>
+			<InitialPopulation>13633</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S5</Id>
+			<Description>Species #5</Description>
+			<InitialPopulation>79698</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S6</Id>
+			<Description>Species #6</Description>
+			<InitialPopulation>92900</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S7</Id>
+			<Description>Species #7</Description>
+			<InitialPopulation>13216</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S8</Id>
+			<Description>Species #8</Description>
+			<InitialPopulation>14059</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S9</Id>
+			<Description>Species #9</Description>
+			<InitialPopulation>57873</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S10</Id>
+			<Description>Species #10</Description>
+			<InitialPopulation>29278</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S11</Id>
+			<Description>Species #11</Description>
+			<InitialPopulation>18237</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S12</Id>
+			<Description>Species #12</Description>
+			<InitialPopulation>24922</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S13</Id>
+			<Description>Species #13</Description>
+			<InitialPopulation>54029</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S14</Id>
+			<Description>Species #14</Description>
+			<InitialPopulation>89623</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S15</Id>
+			<Description>Species #15</Description>
+			<InitialPopulation>36290</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S16</Id>
+			<Description>Species #16</Description>
+			<InitialPopulation>18458</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S17</Id>
+			<Description>Species #17</Description>
+			<InitialPopulation>84234</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S18</Id>
+			<Description>Species #18</Description>
+			<InitialPopulation>18137</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S19</Id>
+			<Description>Species #19</Description>
+			<InitialPopulation>84429</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S20</Id>
+			<Description>Species #20</Description>
+			<InitialPopulation>43158</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S21</Id>
+			<Description>Species #21</Description>
+			<InitialPopulation>40445</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S22</Id>
+			<Description>Species #22</Description>
+			<InitialPopulation>56011</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S23</Id>
+			<Description>Species #23</Description>
+			<InitialPopulation>41397</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S24</Id>
+			<Description>Species #24</Description>
+			<InitialPopulation>97215</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S25</Id>
+			<Description>Species #25</Description>
+			<InitialPopulation>38746</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S26</Id>
+			<Description>Species #26</Description>
+			<InitialPopulation>54355</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S27</Id>
+			<Description>Species #27</Description>
+			<InitialPopulation>16937</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S28</Id>
+			<Description>Species #28</Description>
+			<InitialPopulation>73924</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S29</Id>
+			<Description>Species #29</Description>
+			<InitialPopulation>35953</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S30</Id>
+			<Description>Species #30</Description>
+			<InitialPopulation>82607</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S31</Id>
+			<Description>Species #31</Description>
+			<InitialPopulation>44712</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S32</Id>
+			<Description>Species #32</Description>
+			<InitialPopulation>10015</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S33</Id>
+			<Description>Species #33</Description>
+			<InitialPopulation>19286</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S34</Id>
+			<Description>Species #34</Description>
+			<InitialPopulation>48609</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S35</Id>
+			<Description>Species #35</Description>
+			<InitialPopulation>36524</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S36</Id>
+			<Description>Species #36</Description>
+			<InitialPopulation>26343</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S37</Id>
+			<Description>Species #37</Description>
+			<InitialPopulation>42971</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S38</Id>
+			<Description>Species #38</Description>
+			<InitialPopulation>37230</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S39</Id>
+			<Description>Species #39</Description>
+			<InitialPopulation>83325</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S40</Id>
+			<Description>Species #40</Description>
+			<InitialPopulation>79225</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S41</Id>
+			<Description>Species #41</Description>
+			<InitialPopulation>30903</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S42</Id>
+			<Description>Species #42</Description>
+			<InitialPopulation>94549</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S43</Id>
+			<Description>Species #43</Description>
+			<InitialPopulation>14248</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S44</Id>
+			<Description>Species #44</Description>
+			<InitialPopulation>60966</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S45</Id>
+			<Description>Species #45</Description>
+			<InitialPopulation>78870</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S46</Id>
+			<Description>Species #46</Description>
+			<InitialPopulation>22856</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S47</Id>
+			<Description>Species #47</Description>
+			<InitialPopulation>37807</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S48</Id>
+			<Description>Species #48</Description>
+			<InitialPopulation>63537</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S49</Id>
+			<Description>Species #49</Description>
+			<InitialPopulation>79155</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S50</Id>
+			<Description>Species #50</Description>
+			<InitialPopulation>19549</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S51</Id>
+			<Description>Species #51</Description>
+			<InitialPopulation>30653</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S52</Id>
+			<Description>Species #52</Description>
+			<InitialPopulation>65787</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S53</Id>
+			<Description>Species #53</Description>
+			<InitialPopulation>31985</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S54</Id>
+			<Description>Species #54</Description>
+			<InitialPopulation>80657</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S55</Id>
+			<Description>Species #55</Description>
+			<InitialPopulation>94864</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S56</Id>
+			<Description>Species #56</Description>
+			<InitialPopulation>91781</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S57</Id>
+			<Description>Species #57</Description>
+			<InitialPopulation>61652</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S58</Id>
+			<Description>Species #58</Description>
+			<InitialPopulation>16675</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S59</Id>
+			<Description>Species #59</Description>
+			<InitialPopulation>11732</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S60</Id>
+			<Description>Species #60</Description>
+			<InitialPopulation>55543</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S61</Id>
+			<Description>Species #61</Description>
+			<InitialPopulation>86680</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S62</Id>
+			<Description>Species #62</Description>
+			<InitialPopulation>99867</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S63</Id>
+			<Description>Species #63</Description>
+			<InitialPopulation>42569</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S64</Id>
+			<Description>Species #64</Description>
+			<InitialPopulation>53665</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S65</Id>
+			<Description>Species #65</Description>
+			<InitialPopulation>99644</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S66</Id>
+			<Description>Species #66</Description>
+			<InitialPopulation>21355</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S67</Id>
+			<Description>Species #67</Description>
+			<InitialPopulation>40000</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S68</Id>
+			<Description>Species #68</Description>
+			<InitialPopulation>60869</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S69</Id>
+			<Description>Species #69</Description>
+			<InitialPopulation>43212</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S70</Id>
+			<Description>Species #70</Description>
+			<InitialPopulation>13290</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S71</Id>
+			<Description>Species #71</Description>
+			<InitialPopulation>71245</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S72</Id>
+			<Description>Species #72</Description>
+			<InitialPopulation>67856</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S73</Id>
+			<Description>Species #73</Description>
+			<InitialPopulation>96409</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S74</Id>
+			<Description>Species #74</Description>
+			<InitialPopulation>83977</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S75</Id>
+			<Description>Species #75</Description>
+			<InitialPopulation>56771</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S76</Id>
+			<Description>Species #76</Description>
+			<InitialPopulation>97000</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S77</Id>
+			<Description>Species #77</Description>
+			<InitialPopulation>20762</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S78</Id>
+			<Description>Species #78</Description>
+			<InitialPopulation>21740</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S79</Id>
+			<Description>Species #79</Description>
+			<InitialPopulation>33208</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S80</Id>
+			<Description>Species #80</Description>
+			<InitialPopulation>55103</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S81</Id>
+			<Description>Species #81</Description>
+			<InitialPopulation>31500</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S82</Id>
+			<Description>Species #82</Description>
+			<InitialPopulation>95019</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S83</Id>
+			<Description>Species #83</Description>
+			<InitialPopulation>99553</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S84</Id>
+			<Description>Species #84</Description>
+			<InitialPopulation>11093</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S85</Id>
+			<Description>Species #85</Description>
+			<InitialPopulation>38479</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S86</Id>
+			<Description>Species #86</Description>
+			<InitialPopulation>87473</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S87</Id>
+			<Description>Species #87</Description>
+			<InitialPopulation>63735</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S88</Id>
+			<Description>Species #88</Description>
+			<InitialPopulation>55900</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S89</Id>
+			<Description>Species #89</Description>
+			<InitialPopulation>71404</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S90</Id>
+			<Description>Species #90</Description>
+			<InitialPopulation>15617</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S91</Id>
+			<Description>Species #91</Description>
+			<InitialPopulation>40740</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S92</Id>
+			<Description>Species #92</Description>
+			<InitialPopulation>35579</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S93</Id>
+			<Description>Species #93</Description>
+			<InitialPopulation>91434</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S94</Id>
+			<Description>Species #94</Description>
+			<InitialPopulation>39018</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S95</Id>
+			<Description>Species #95</Description>
+			<InitialPopulation>25717</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S96</Id>
+			<Description>Species #96</Description>
+			<InitialPopulation>44094</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S97</Id>
+			<Description>Species #97</Description>
+			<InitialPopulation>70756</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S98</Id>
+			<Description>Species #98</Description>
+			<InitialPopulation>24178</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S99</Id>
+			<Description>Species #99</Description>
+			<InitialPopulation>95774</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S100</Id>
+			<Description>Species #100</Description>
+			<InitialPopulation>54737</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S101</Id>
+			<Description>Species #101</Description>
+			<InitialPopulation>95712</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S102</Id>
+			<Description>Species #102</Description>
+			<InitialPopulation>68237</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S103</Id>
+			<Description>Species #103</Description>
+			<InitialPopulation>35186</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S104</Id>
+			<Description>Species #104</Description>
+			<InitialPopulation>75747</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S105</Id>
+			<Description>Species #105</Description>
+			<InitialPopulation>62411</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S106</Id>
+			<Description>Species #106</Description>
+			<InitialPopulation>16705</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S107</Id>
+			<Description>Species #107</Description>
+			<InitialPopulation>83641</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S108</Id>
+			<Description>Species #108</Description>
+			<InitialPopulation>53158</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S109</Id>
+			<Description>Species #109</Description>
+			<InitialPopulation>11750</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S110</Id>
+			<Description>Species #110</Description>
+			<InitialPopulation>12776</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S111</Id>
+			<Description>Species #111</Description>
+			<InitialPopulation>79862</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S112</Id>
+			<Description>Species #112</Description>
+			<InitialPopulation>70534</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S113</Id>
+			<Description>Species #113</Description>
+			<InitialPopulation>58259</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S114</Id>
+			<Description>Species #114</Description>
+			<InitialPopulation>43117</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S115</Id>
+			<Description>Species #115</Description>
+			<InitialPopulation>96429</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S116</Id>
+			<Description>Species #116</Description>
+			<InitialPopulation>89260</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S117</Id>
+			<Description>Species #117</Description>
+			<InitialPopulation>19239</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S118</Id>
+			<Description>Species #118</Description>
+			<InitialPopulation>77896</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S119</Id>
+			<Description>Species #119</Description>
+			<InitialPopulation>99020</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S120</Id>
+			<Description>Species #120</Description>
+			<InitialPopulation>79360</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S121</Id>
+			<Description>Species #121</Description>
+			<InitialPopulation>45393</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S122</Id>
+			<Description>Species #122</Description>
+			<InitialPopulation>60625</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S123</Id>
+			<Description>Species #123</Description>
+			<InitialPopulation>17613</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S124</Id>
+			<Description>Species #124</Description>
+			<InitialPopulation>83068</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S125</Id>
+			<Description>Species #125</Description>
+			<InitialPopulation>39473</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S126</Id>
+			<Description>Species #126</Description>
+			<InitialPopulation>14928</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S127</Id>
+			<Description>Species #127</Description>
+			<InitialPopulation>36827</InitialPopulation>
+		</Species>
+		<Species>
+			<Id>S128</Id>
+			<Description>Species #128</Description>
+			<InitialPopulation>34012</InitialPopulation>
+		</Species>
+	</SpeciesList>
+</Model>
+
