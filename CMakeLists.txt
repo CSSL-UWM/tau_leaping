@@ -3,3 +3,4 @@ CMAKE_MINIMUM_REQUIRED (VERSION 2.8)
 PROJECT (Gillespie)
 
 ADD_SUBDIRECTORY (tau_leaping)
+ADD_SUBDIRECTORY (toy_system_gen)

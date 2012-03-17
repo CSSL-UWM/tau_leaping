@@ -16,4 +16,14 @@ The CUDA driver and CUDA Toolkit must be installed in the system. The latest ver
 http://developer.nvidia.com/cuda-toolkit
 
 to run the simulation, use the following syntax:
-tau_leaping -f <model_name> -t <finish_time> -n <number of realizations> -r <list_of_Species_to_track_space_separated> 
+tau_leaping -f <model_name> -t <finish_time> -n <number of realizations> -r <list_of_species_to_track_space_separated> 
+
+The solver is accompanied with a toy system generator (toy_system_gen).
+A toy system of arbitrary size can be created with a command:
+toy_system_gen -r <number_of_reactants> -c <number_of_channels> [-mnp <maximum_initial_population>] [-mxp <maximum_initial_population>]
+
+Two special types of systems, that are weakly and strongly coupled ones, can be produced.
+Weakly coupled systems (Cyclic Chain Model):
+toy_system_gen -w -r <number_of_reactants> -mnp <maximum_initial_population>] [-mxp <maximum_initial_population>]
+Strongly coupled systems (Colloidal Aggregation Model):
+toy_system_gen -s -r <number_of_reactants> -mnp <maximum_initial_population>] [-mxp <maximum_initial_population>]
