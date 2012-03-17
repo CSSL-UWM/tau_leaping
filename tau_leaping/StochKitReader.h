@@ -2,7 +2,7 @@
 
 //class for reading reaction network out of "StochKit" XML file
 
-#include "rapidxml/rapidxml.hpp"
+#include <rapidxml/rapidxml.hpp>
 #include <string>
 #include <vector>
 

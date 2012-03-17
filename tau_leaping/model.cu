@@ -334,8 +334,8 @@ float Model::Step(float eps)
 	if(tau1<m_N/a0)
 	{
 		//direct branch
-		printf("tau1=%f\n", tau1);
-		printf("firing 100 direct steps, partial sums: \n");
+		//printf("tau1=%f\n", tau1);
+		//printf("firing 100 direct steps, partial sums: \n");
 		
 		//print_vector<float, float> (m_StateData.m_rPropPartSum);
 	   // printf("\n");
