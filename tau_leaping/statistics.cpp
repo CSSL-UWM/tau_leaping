@@ -2,6 +2,7 @@
 #include <cassert>
 #include <numeric>
 #include <fstream>
+#include <math.h>
 
 using std::vector;
 using std::map;

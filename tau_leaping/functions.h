@@ -4,6 +4,7 @@
 //this file contains a set of common functions
 
 #include <vector>
+#include <stdio.h>
 #include "realtype.h"
 
 #ifdef _MSC_VER
