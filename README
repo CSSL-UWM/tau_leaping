@@ -30,9 +30,9 @@ This command will produce a system with 1000 reactants and 2000 channels and ini
 
 Two special types of systems, that are weakly and strongly coupled ones, can be produced.
 Weakly coupled systems (Cyclic Chain Model):
-toy_system_gen -w -r <number_of_reactants> -mnp <maximum_initial_population>] [-mxp <maximum_initial_population>]
+toy_system_gen -w -r <number_of_reactants> [-mnp <maximum_initial_population>] [-mxp <maximum_initial_population>]
 Strongly coupled systems (Colloidal Aggregation Model):
-toy_system_gen -s -r <number_of_reactants> -mnp <maximum_initial_population>] [-mxp <maximum_initial_population>]
+toy_system_gen -s -r <number_of_reactants> [-mnp <maximum_initial_population>] [-mxp <maximum_initial_population>]
 example:
 toy_system_gen -s  -r 250 -mxp 1000 -mxp 2000
 This command will produce a strongly-coupled system with 250 reactants and 31250 channels and initial population of species varying from 1000 to 2000.
