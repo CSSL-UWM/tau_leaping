@@ -4,6 +4,7 @@
 #include "cl_parser.h"
 #include <iostream>
 #include <vector>
+#include <limits>
 
 #ifndef _WIN32
 #include <string.h>
