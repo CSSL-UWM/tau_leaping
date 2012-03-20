@@ -26,7 +26,7 @@ A toy system of arbitrary size can be created with a command:
 toy_system_gen -r <number_of_reactants> -c <number_of_channels> [-mnp <maximum_initial_population>] [-mxp <maximum_initial_population>]
 example:
 toy_system_gen -r 1000 -c 2000 -mxp 10000
-This command will produce a system with 1000 reactants and 2000 channels and initial population of species varaying from 0 to 10000.
+This command will produce a system with 1000 reactants and 2000 channels and initial population of species varying from 0 to 10000.
 
 Two special types of systems, that are weakly and strongly coupled ones, can be produced.
 Weakly coupled systems (Cyclic Chain Model):
@@ -35,4 +35,4 @@ Strongly coupled systems (Colloidal Aggregation Model):
 toy_system_gen -s -r <number_of_reactants> -mnp <maximum_initial_population>] [-mxp <maximum_initial_population>]
 example:
 toy_system_gen -s  -r 250 -mxp 1000 -mxp 2000
-This command will produce a strongly-coupled system with 250 reactants and 31250 channels and initial population of species varaying from 1000 to 2000.
+This command will produce a strongly-coupled system with 250 reactants and 31250 channels and initial population of species varying from 1000 to 2000.
